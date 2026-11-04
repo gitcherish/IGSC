@@ -1,0 +1,124 @@
+{
+  "dataset": "EventStoryLine v0.9 processed feature caches",
+  "upstream": "https://github.com/tommasoc80/EventStoryLine",
+  "feature_processing_origin": "https://github.com/LchengC/iLIF",
+  "corpus_license_url": "https://github.com/tommasoc80/EventStoryLine/blob/master/LICENSE.md",
+  "files": {
+    "train": {
+      "path": "data/database/EventStoryLine_bert_intra_and_inter_train_features.pkl",
+      "sha256": "792bd3f26b3565cfea427df3c1a3ad83c8a1a2ec0dba1feab101b5a9cee5e08f",
+      "size_bytes": 12814618,
+      "counts": {
+        "documents": 233,
+        "candidates": 61065,
+        "labels": {
+          "0": 56132,
+          "1": 2259,
+          "2": 2674
+        },
+        "topics": {
+          "1": 21,
+          "12": 11,
+          "13": 11,
+          "14": 11,
+          "16": 11,
+          "18": 11,
+          "19": 11,
+          "20": 11,
+          "22": 14,
+          "23": 11,
+          "24": 11,
+          "3": 11,
+          "30": 13,
+          "32": 11,
+          "33": 11,
+          "35": 11,
+          "4": 10,
+          "5": 10,
+          "7": 11,
+          "8": 11
+        },
+        "location_label": {
+          "0_0": 7424,
+          "0_1": 689,
+          "0_2": 886,
+          "1_0": 48708,
+          "1_1": 1570,
+          "1_2": 1788
+        }
+      }
+    },
+    "dev": {
+      "path": "data/database/EventStoryLine_bert_intra_and_inter_dev_features.pkl",
+      "sha256": "0c1392087b00d9bdda0d8fc3c04ac8856eb5af8ef71d94431f7a98f2b7621d4c",
+      "size_bytes": 1758595,
+      "counts": {
+        "documents": 25,
+        "candidates": 9514,
+        "labels": {
+          "0": 8969,
+          "1": 352,
+          "2": 193
+        },
+        "topics": {
+          "37": 14,
+          "41": 11
+        },
+        "location_label": {
+          "0_0": 1172,
+          "0_1": 110,
+          "0_2": 66,
+          "1_0": 7797,
+          "1_1": 242,
+          "1_2": 127
+        }
+      }
+    }
+  },
+  "available_positive_pairs": {
+    "intra": 1751,
+    "inter": 3727,
+    "all": 5478
+  },
+  "protocol": {
+    "seed": 209,
+    "k_fold": 5,
+    "unit": "document",
+    "topic_isolated": false,
+    "implementation": "sklearn.model_selection.KFold(shuffle=True, random_state=209)",
+    "cache_order_preserved": true
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "path": "data/splits/seed209/fold1.json",
+      "training_documents": 186,
+      "test_documents": 47
+    },
+    {
+      "fold": 2,
+      "path": "data/splits/seed209/fold2.json",
+      "training_documents": 186,
+      "test_documents": 47
+    },
+    {
+      "fold": 3,
+      "path": "data/splits/seed209/fold3.json",
+      "training_documents": 186,
+      "test_documents": 47
+    },
+    {
+      "fold": 4,
+      "path": "data/splits/seed209/fold4.json",
+      "training_documents": 187,
+      "test_documents": 46
+    },
+    {
+      "fold": 5,
+      "path": "data/splits/seed209/fold5.json",
+      "training_documents": 187,
+      "test_documents": 46
+    }
+  ],
+  "validation": "data/splits/seed209/validation.json"
+}
