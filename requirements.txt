@@ -1,0 +1,28 @@
+# IGSC target: Python 3.7, Linux x86_64, NVIDIA CUDA 11.6.
+# Code-side installation profile; not a verified historical experiment lock.
+# Install torch first, then this file, following README.md.
+# Do not mix this profile with CPU torch or the local torchfile12.1 wheels.
+--extra-index-url https://download.pytorch.org/whl/cu116
+--find-links https://data.pyg.org/whl/torch-1.13.0+cu116.html
+--only-binary=torch-scatter,torch-sparse
+
+# Extraction model and graph operations.
+torch==1.13.1+cu116
+transformers==4.15.0
+torch-geometric==2.1.0.post1
+torch-scatter==2.0.9
+torch-sparse==0.6.15+pt113cu116
+
+# Data processing, evaluation, and plotting.
+numpy==1.21.5
+scipy==1.7.3
+scikit-learn==1.0.2
+matplotlib==3.5.3
+tqdm==4.64.1
+
+# Additional imports used by the bundled RE-DMP pre-training implementation.
+# Wikipedia construction needs separate parser/Java tooling; see README.md.
+boto3==1.26.165
+requests==2.31.0
+six==1.16.0
+sentencepiece==0.1.99

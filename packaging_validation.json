@@ -1,0 +1,19 @@
+{
+  "verification_kind": "packaging_and_synthetic_protocol_checks_only",
+  "python_sources_parsed_as_python37": 83,
+  "local_markdown_links_checked": 18,
+  "integrity_baseline_files_verified": 5,
+  "source_workspace_unchanged": true,
+  "gitignore_excluded_examples_verified": 12,
+  "gitignore_included_examples_verified": 10,
+  "all_files_below_browser_upload_limit_25_mib": true,
+  "weights_installers_and_archives_included": false,
+  "synthetic_protocol_tests": {
+    "passed": 23,
+    "failed": 0,
+    "runtime": "local Python 3.11 CPU environment; not the target GPU environment",
+    "command": "python -B -m pytest case_study/test_export_cases.py case_study/test_train_and_export.py"
+  },
+  "gpu_training_performed": false,
+  "full_environment_installation_performed": false
+}

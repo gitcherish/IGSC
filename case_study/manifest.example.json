@@ -1,0 +1,12 @@
+{
+  "runs": [
+    {
+      "run_id": "fold1",
+      "checkpoint": "../trained_checkpoints/fold1.pt",
+      "config": "run.config.example.json",
+      "features": "../data/database/EventStoryLine_bert_intra_and_inter_train_features.pkl",
+      "split": {"kind": "kfold", "fold": 1, "n_splits": 5, "seed": 209},
+      "training_provenance": "REPLACE with real training log/checkpoint selection evidence and checkpoint-to-fold mapping"
+    }
+  ]
+}

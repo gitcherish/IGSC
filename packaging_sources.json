@@ -1,0 +1,790 @@
+{
+  "package_date": "2026-11-04",
+  "baseline_kind": "current_workspace_distribution_not_historical_training_source",
+  "copied_sources": [
+    {
+      "source": "main.py",
+      "destination": "main.py",
+      "source_sha256": "aafa6228ec8848efb8df965c99fd8e0760985d3cd79a25b6fb69d5934fb457bd",
+      "packaged_sha256": "fc73ceedf7bfd51517e3502dbf374eefb49dc06a4941b89e4b15d5c318729085",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "parameter.py",
+      "destination": "parameter.py",
+      "source_sha256": "9115eb9155fe390dc20f8d2976b0233f61751835d5accf1b230243d0cad6659a",
+      "packaged_sha256": "d9ce3a0710d28ab216f731ab6ab8c7424f918c386745c1ce4e853b58a1e0740c",
+      "adaptation": "portable default encoder path and LF normalization"
+    },
+    {
+      "source": "utils.py",
+      "destination": "utils.py",
+      "source_sha256": "15a83ae648ce8611e41e0e801dc2cdb6102f640aff242eae418a0227be9963da",
+      "packaged_sha256": "e69be379d097699b0261ae2aaf10943fa5ad6dd87648b0afc9815986bb95630c",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "README.md",
+      "destination": "README.md",
+      "source_sha256": "1575731092d518ce376bc927fa9e22bb703a95352989b421cb465534bc5a75fe",
+      "packaged_sha256": "2057cc677d2264abe3ec85b03a5499b0e4d426d3bec18c9aa7ad7da5cb6e5e44",
+      "adaptation": "distribution documentation and LF normalization; private source unchanged"
+    },
+    {
+      "source": "requirements.txt",
+      "destination": "requirements.txt",
+      "source_sha256": "4fd66653ce93152b2058484cde27c8b149dfefbbd4f59e784f81b20a74f32e85",
+      "packaged_sha256": "4fd66653ce93152b2058484cde27c8b149dfefbbd4f59e784f81b20a74f32e85",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "model/__init__.py",
+      "destination": "model/__init__.py",
+      "source_sha256": "4e8174bf7ec353ef201a4e6a14f2cf3672030fefdd9ad0943de40888d4c4e31e",
+      "packaged_sha256": "9e84d29b76f7fbecf7314bdeafa67cd87a06823f4b988ee6890e3053cbff5194",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "model/model.py",
+      "destination": "model/model.py",
+      "source_sha256": "cf1892f76bed62afd06dc08887185fcf813e98193ef269ed73e6e16f427418c6",
+      "packaged_sha256": "04b3391f905bf45759ac12188a3b27ceead15c36c724ce8b4eb419994574a09d",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "model/CGE.py",
+      "destination": "model/CGE.py",
+      "source_sha256": "529d58f2b3e08fe8a485ed8570d4d16bc00d2eb33e2d6e39addf3b3d177404d5",
+      "packaged_sha256": "f3aaf54e93d09d4d9fc21cefa964e722de6c6dac3e273260352f3834f75d3266",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "data/__init__.py",
+      "destination": "data/__init__.py",
+      "source_sha256": "bf3bee192acc8c845ed64ae956aab88f4c91b04197c43382b87f477ad1ad7883",
+      "packaged_sha256": "bf3bee192acc8c845ed64ae956aab88f4c91b04197c43382b87f477ad1ad7883",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "data/process_esc_csr.py",
+      "destination": "data/process_esc_csr.py",
+      "source_sha256": "a06b61942a02678bf311533ff3451c623b7e3a3f2ae3974affabb33927872063",
+      "packaged_sha256": "30aa7313a540c1ba36cefe269f1675860c00b6d1b53b72777d3c2da9726a8cb6",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "features_pkl_process/process.py",
+      "destination": "features_pkl_process/process.py",
+      "source_sha256": "b7a9e1aefa01b3bf86b1422aa2683035a1f07fa957b9f37defa1ad7d53997561",
+      "packaged_sha256": "b7a9e1aefa01b3bf86b1422aa2683035a1f07fa957b9f37defa1ad7d53997561",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "features_pkl_process/process_event.py",
+      "destination": "features_pkl_process/process_event.py",
+      "source_sha256": "78d16a291a53372e7d24e293541638dc2ca7bff9814651e917745b28f7d4a86a",
+      "packaged_sha256": "78d16a291a53372e7d24e293541638dc2ca7bff9814651e917745b28f7d4a86a",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/.gitignore",
+      "destination": "RE-DMP-main/.gitignore",
+      "source_sha256": "5b57a0fd0b0357c18ffbebff6ff488584d075d3eaed44129c8d2da08e94bfef0",
+      "packaged_sha256": "5b57a0fd0b0357c18ffbebff6ff488584d075d3eaed44129c8d2da08e94bfef0",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/data/dev.tsv",
+      "destination": "RE-DMP-main/data/dev.tsv",
+      "source_sha256": "190f830b2f1ad7ac8fab199ce7d2606a1501e5073a202940af7cf1f26d036b8b",
+      "packaged_sha256": "190f830b2f1ad7ac8fab199ce7d2606a1501e5073a202940af7cf1f26d036b8b",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/data/test.tsv",
+      "destination": "RE-DMP-main/data/test.tsv",
+      "source_sha256": "190f830b2f1ad7ac8fab199ce7d2606a1501e5073a202940af7cf1f26d036b8b",
+      "packaged_sha256": "190f830b2f1ad7ac8fab199ce7d2606a1501e5073a202940af7cf1f26d036b8b",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/data/train.tsv",
+      "destination": "RE-DMP-main/data/train.tsv",
+      "source_sha256": "e79bf1eb807fbcc207d2554dd9f55312885d127d843ca8d17deb42c327b018aa",
+      "packaged_sha256": "e79bf1eb807fbcc207d2554dd9f55312885d127d843ca8d17deb42c327b018aa",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/eval/semeval2010_task8_scorer-v1.2.pl",
+      "destination": "RE-DMP-main/eval/semeval2010_task8_scorer-v1.2.pl",
+      "source_sha256": "186e6bee0ade9255758a000fc27efc473494ac630f3c332b99cdf9221d481397",
+      "packaged_sha256": "186e6bee0ade9255758a000fc27efc473494ac630f3c332b99cdf9221d481397",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/eval.sh",
+      "destination": "RE-DMP-main/eval.sh",
+      "source_sha256": "9a69231398d4f00ae020260323816f711d6588e017c4ee5a5b520a34528b0c2a",
+      "packaged_sha256": "9a69231398d4f00ae020260323816f711d6588e017c4ee5a5b520a34528b0c2a",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/modules/__init__.py",
+      "destination": "RE-DMP-main/modules/__init__.py",
+      "source_sha256": "47f0e7785601fb1f026b8e008c5cfd815d713f0c9de412dc27cb543d76a3f302",
+      "packaged_sha256": "47f0e7785601fb1f026b8e008c5cfd815d713f0c9de412dc27cb543d76a3f302",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/modules/bert.py",
+      "destination": "RE-DMP-main/modules/bert.py",
+      "source_sha256": "f0121c39a541b7e577659af1fe39e7c2f84fba48a279d9f1612c8384af1631cd",
+      "packaged_sha256": "f0121c39a541b7e577659af1fe39e7c2f84fba48a279d9f1612c8384af1631cd",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/modules/biaffine.py",
+      "destination": "RE-DMP-main/modules/biaffine.py",
+      "source_sha256": "cb4f3fe2697178f9be2ce12983dc6d27eb27c8049cfde07b3af161ffe0dbfac5",
+      "packaged_sha256": "cb4f3fe2697178f9be2ce12983dc6d27eb27c8049cfde07b3af161ffe0dbfac5",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/modules/crf.py",
+      "destination": "RE-DMP-main/modules/crf.py",
+      "source_sha256": "985fe5cc3b19c0fb83259a461d3bd5fb31eae7b8767175ec93828b452afba945",
+      "packaged_sha256": "985fe5cc3b19c0fb83259a461d3bd5fb31eae7b8767175ec93828b452afba945",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/modules/dropout.py",
+      "destination": "RE-DMP-main/modules/dropout.py",
+      "source_sha256": "05177e1c207944d54898bf1305d0d71034f6fdf093e8f7ec2d603a71ad06b3c3",
+      "packaged_sha256": "05177e1c207944d54898bf1305d0d71034f6fdf093e8f7ec2d603a71ad06b3c3",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/modules/file_utils.py",
+      "destination": "RE-DMP-main/modules/file_utils.py",
+      "source_sha256": "ac0c95ec84ba905c483a9d8c8c3aff8df7f7fc6dbbb268914318abd33e50b1ad",
+      "packaged_sha256": "ac0c95ec84ba905c483a9d8c8c3aff8df7f7fc6dbbb268914318abd33e50b1ad",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/modules/layer_norm.py",
+      "destination": "RE-DMP-main/modules/layer_norm.py",
+      "source_sha256": "8efb61e31126fef5bf6de04296e50c2c234af7425fe74e73bb91fe014a7e28f0",
+      "packaged_sha256": "8efb61e31126fef5bf6de04296e50c2c234af7425fe74e73bb91fe014a7e28f0",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/modules/lstm.py",
+      "destination": "RE-DMP-main/modules/lstm.py",
+      "source_sha256": "b6926ee85acf9dcd94727bf0d184ac8c74c5f0b4881d503f566c4bc3a19699e7",
+      "packaged_sha256": "b6926ee85acf9dcd94727bf0d184ac8c74c5f0b4881d503f566c4bc3a19699e7",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/modules/mlp.py",
+      "destination": "RE-DMP-main/modules/mlp.py",
+      "source_sha256": "f28a3642be1969d6000c450b74cba8e3b55ab0e66920145e7ad7d6f3c13d7ea3",
+      "packaged_sha256": "f28a3642be1969d6000c450b74cba8e3b55ab0e66920145e7ad7d6f3c13d7ea3",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/modules/optimization.py",
+      "destination": "RE-DMP-main/modules/optimization.py",
+      "source_sha256": "0a9646d7f16af4522245ffaedc9ac584c174d0647f5cc23217c2e27db7896b08",
+      "packaged_sha256": "0a9646d7f16af4522245ffaedc9ac584c174d0647f5cc23217c2e27db7896b08",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/modules/schedulers.py",
+      "destination": "RE-DMP-main/modules/schedulers.py",
+      "source_sha256": "af369d82c44c1f7debc3e16130373744c57e976801783bdbe55bb5f2c3db25b3",
+      "packaged_sha256": "af369d82c44c1f7debc3e16130373744c57e976801783bdbe55bb5f2c3db25b3",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/modules/tokenization.py",
+      "destination": "RE-DMP-main/modules/tokenization.py",
+      "source_sha256": "ef2496f898325a0e324ccd55525acd86641725bb01f5d3cd09a4971ff594b250",
+      "packaged_sha256": "ef2496f898325a0e324ccd55525acd86641725bb01f5d3cd09a4971ff594b250",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/modules/transformer_encoder.py",
+      "destination": "RE-DMP-main/modules/transformer_encoder.py",
+      "source_sha256": "2eaaa7b94422b2107ebe6ad8692669036bd7177df2b4413f60a5fb2a7e1d947f",
+      "packaged_sha256": "2eaaa7b94422b2107ebe6ad8692669036bd7177df2b4413f60a5fb2a7e1d947f",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/modules/zen.py",
+      "destination": "RE-DMP-main/modules/zen.py",
+      "source_sha256": "2b6ae41f8b0595902a753bc32085cc9692d652b76f8209033b71bc0cc34cc833",
+      "packaged_sha256": "2b6ae41f8b0595902a753bc32085cc9692d652b76f8209033b71bc0cc34cc833",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/data/wiki_00000",
+      "destination": "RE-DMP-main/pre-training/data/wiki_00000",
+      "source_sha256": "806755dba0eaa21410e6f592eabf5abaa9613ead0e40c5430c5016d385a4366c",
+      "packaged_sha256": "806755dba0eaa21410e6f592eabf5abaa9613ead0e40c5430c5016d385a4366c",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/data/wiki_00001",
+      "destination": "RE-DMP-main/pre-training/data/wiki_00001",
+      "source_sha256": "806755dba0eaa21410e6f592eabf5abaa9613ead0e40c5430c5016d385a4366c",
+      "packaged_sha256": "806755dba0eaa21410e6f592eabf5abaa9613ead0e40c5430c5016d385a4366c",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/dep_helper.py",
+      "destination": "RE-DMP-main/pre-training/dep_helper.py",
+      "source_sha256": "a9c43e9da2cfd16db493b5e040bf7a94ff96be7d5f7edc96acb50f62affe8712",
+      "packaged_sha256": "a9c43e9da2cfd16db493b5e040bf7a94ff96be7d5f7edc96acb50f62affe8712",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/dep_main.py",
+      "destination": "RE-DMP-main/pre-training/dep_main.py",
+      "source_sha256": "d505170c7196bd7758f318e3fe34a6462207f0208f614ea4c2f336c990ebb346",
+      "packaged_sha256": "d505170c7196bd7758f318e3fe34a6462207f0208f614ea4c2f336c990ebb346",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/dep_model.py",
+      "destination": "RE-DMP-main/pre-training/dep_model.py",
+      "source_sha256": "e5c5650e17e834c86abb948c2ddbca204511128a8ea92c1ac836c8ae09ab627c",
+      "packaged_sha256": "e5c5650e17e834c86abb948c2ddbca204511128a8ea92c1ac836c8ae09ab627c",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/labels/wiki.rel.txt",
+      "destination": "RE-DMP-main/pre-training/labels/wiki.rel.txt",
+      "source_sha256": "f82141df23efc5f5b182653381c263de01ac4756c369fd9bc6c20c77f5d359c4",
+      "packaged_sha256": "f82141df23efc5f5b182653381c263de01ac4756c369fd9bc6c20c77f5d359c4",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/modules/__init__.py",
+      "destination": "RE-DMP-main/pre-training/modules/__init__.py",
+      "source_sha256": "61a313ecc510c45311f9aa6b753a982a9839d5e12819d6f8631fcbd9d25167f0",
+      "packaged_sha256": "61a313ecc510c45311f9aa6b753a982a9839d5e12819d6f8631fcbd9d25167f0",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/modules/bert.py",
+      "destination": "RE-DMP-main/pre-training/modules/bert.py",
+      "source_sha256": "f0121c39a541b7e577659af1fe39e7c2f84fba48a279d9f1612c8384af1631cd",
+      "packaged_sha256": "f0121c39a541b7e577659af1fe39e7c2f84fba48a279d9f1612c8384af1631cd",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/modules/biaffine.py",
+      "destination": "RE-DMP-main/pre-training/modules/biaffine.py",
+      "source_sha256": "ca87cafabbac2c7a77901bcbc6050f3a791bef627d5c64f835968e2a7e44ecd5",
+      "packaged_sha256": "ca87cafabbac2c7a77901bcbc6050f3a791bef627d5c64f835968e2a7e44ecd5",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/modules/dropout.py",
+      "destination": "RE-DMP-main/pre-training/modules/dropout.py",
+      "source_sha256": "05177e1c207944d54898bf1305d0d71034f6fdf093e8f7ec2d603a71ad06b3c3",
+      "packaged_sha256": "05177e1c207944d54898bf1305d0d71034f6fdf093e8f7ec2d603a71ad06b3c3",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/modules/file_utils.py",
+      "destination": "RE-DMP-main/pre-training/modules/file_utils.py",
+      "source_sha256": "ac0c95ec84ba905c483a9d8c8c3aff8df7f7fc6dbbb268914318abd33e50b1ad",
+      "packaged_sha256": "ac0c95ec84ba905c483a9d8c8c3aff8df7f7fc6dbbb268914318abd33e50b1ad",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/modules/lstm.py",
+      "destination": "RE-DMP-main/pre-training/modules/lstm.py",
+      "source_sha256": "b6926ee85acf9dcd94727bf0d184ac8c74c5f0b4881d503f566c4bc3a19699e7",
+      "packaged_sha256": "b6926ee85acf9dcd94727bf0d184ac8c74c5f0b4881d503f566c4bc3a19699e7",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/modules/mlp.py",
+      "destination": "RE-DMP-main/pre-training/modules/mlp.py",
+      "source_sha256": "955b61aba2dac30f7c8f4641c2f82a892c614a56f5007bcb15b167f707f15292",
+      "packaged_sha256": "955b61aba2dac30f7c8f4641c2f82a892c614a56f5007bcb15b167f707f15292",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/modules/optimization.py",
+      "destination": "RE-DMP-main/pre-training/modules/optimization.py",
+      "source_sha256": "0a9646d7f16af4522245ffaedc9ac584c174d0647f5cc23217c2e27db7896b08",
+      "packaged_sha256": "0a9646d7f16af4522245ffaedc9ac584c174d0647f5cc23217c2e27db7896b08",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/modules/schedulers.py",
+      "destination": "RE-DMP-main/pre-training/modules/schedulers.py",
+      "source_sha256": "af369d82c44c1f7debc3e16130373744c57e976801783bdbe55bb5f2c3db25b3",
+      "packaged_sha256": "af369d82c44c1f7debc3e16130373744c57e976801783bdbe55bb5f2c3db25b3",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/modules/tokenization.py",
+      "destination": "RE-DMP-main/pre-training/modules/tokenization.py",
+      "source_sha256": "d72a98b98fb24eba11311ae4dc10bd9e9202528d1a62272c3963f9e8816b62a7",
+      "packaged_sha256": "d72a98b98fb24eba11311ae4dc10bd9e9202528d1a62272c3963f9e8816b62a7",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/modules/zen.py",
+      "destination": "RE-DMP-main/pre-training/modules/zen.py",
+      "source_sha256": "2b6ae41f8b0595902a753bc32085cc9692d652b76f8209033b71bc0cc34cc833",
+      "packaged_sha256": "2b6ae41f8b0595902a753bc32085cc9692d652b76f8209033b71bc0cc34cc833",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/readme.md",
+      "destination": "RE-DMP-main/pre-training/readme.md",
+      "source_sha256": "c46081d5abd45f590524ec4acf5df7d04893c8b4531b9350176e5f8922328b7b",
+      "packaged_sha256": "c46081d5abd45f590524ec4acf5df7d04893c8b4531b9350176e5f8922328b7b",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/run.sh",
+      "destination": "RE-DMP-main/pre-training/run.sh",
+      "source_sha256": "84ab5e24c5043b0dc5b8c349b9c892f26b54ac7750cbe1d655474ecafeaabdf9",
+      "packaged_sha256": "84ab5e24c5043b0dc5b8c349b9c892f26b54ac7750cbe1d655474ecafeaabdf9",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/transformers_xlnet/__init__.py",
+      "destination": "RE-DMP-main/pre-training/transformers_xlnet/__init__.py",
+      "source_sha256": "f4bd8d23ef1d75208d8d0d3a0f23708e5e7037663412bff9d3f78dd28e1ae477",
+      "packaged_sha256": "f4bd8d23ef1d75208d8d0d3a0f23708e5e7037663412bff9d3f78dd28e1ae477",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/transformers_xlnet/file_utils.py",
+      "destination": "RE-DMP-main/pre-training/transformers_xlnet/file_utils.py",
+      "source_sha256": "5b8e7de8c6805e618e5b885ae6cb95502972dae1ef25519beaef15bee84ca213",
+      "packaged_sha256": "5b8e7de8c6805e618e5b885ae6cb95502972dae1ef25519beaef15bee84ca213",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/transformers_xlnet/modeling_utils.py",
+      "destination": "RE-DMP-main/pre-training/transformers_xlnet/modeling_utils.py",
+      "source_sha256": "9cc334c0986b3899e75d671a04569bc9c1e28277e638590d231eedd0f0002d6a",
+      "packaged_sha256": "9cc334c0986b3899e75d671a04569bc9c1e28277e638590d231eedd0f0002d6a",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/transformers_xlnet/modeling_xlnet.py",
+      "destination": "RE-DMP-main/pre-training/transformers_xlnet/modeling_xlnet.py",
+      "source_sha256": "c23037cc850ffa0a319027422cf5d6657cd96210c601b30bd465cbf27622d111",
+      "packaged_sha256": "c23037cc850ffa0a319027422cf5d6657cd96210c601b30bd465cbf27622d111",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/transformers_xlnet/optimization.py",
+      "destination": "RE-DMP-main/pre-training/transformers_xlnet/optimization.py",
+      "source_sha256": "186ddfc05ffa4852420bdb5d520ac4c42be38210d74053da81bfe3894e9bb30e",
+      "packaged_sha256": "186ddfc05ffa4852420bdb5d520ac4c42be38210d74053da81bfe3894e9bb30e",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/transformers_xlnet/tokenization_utils.py",
+      "destination": "RE-DMP-main/pre-training/transformers_xlnet/tokenization_utils.py",
+      "source_sha256": "f7e68408e61687a64fa40bfc85fa49a4066bbd0821d157e00c1a7481dfbc7a4c",
+      "packaged_sha256": "f7e68408e61687a64fa40bfc85fa49a4066bbd0821d157e00c1a7481dfbc7a4c",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/transformers_xlnet/tokenization_xlnet.py",
+      "destination": "RE-DMP-main/pre-training/transformers_xlnet/tokenization_xlnet.py",
+      "source_sha256": "6f833bde8488d0567c21464870d868a040d73052727d874de5edd62ead00a731",
+      "packaged_sha256": "6f833bde8488d0567c21464870d868a040d73052727d874de5edd62ead00a731",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/util/__init__.py",
+      "destination": "RE-DMP-main/pre-training/util/__init__.py",
+      "source_sha256": "88bab8a19fcd5f5eec2940122f7cfacfd9825ba979c78a86bcfac20a0c80bee3",
+      "packaged_sha256": "88bab8a19fcd5f5eec2940122f7cfacfd9825ba979c78a86bcfac20a0c80bee3",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/util/alg.py",
+      "destination": "RE-DMP-main/pre-training/util/alg.py",
+      "source_sha256": "6954e937c54b78a272735cad37ee3695494ad2ff38981454d0e5562626560c41",
+      "packaged_sha256": "6954e937c54b78a272735cad37ee3695494ad2ff38981454d0e5562626560c41",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/util/fn.py",
+      "destination": "RE-DMP-main/pre-training/util/fn.py",
+      "source_sha256": "f2666db4a523f4a8040038d23214665c2bd978e0957fe33dfdea4717e326a566",
+      "packaged_sha256": "f2666db4a523f4a8040038d23214665c2bd978e0957fe33dfdea4717e326a566",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/util/ngram_utils.py",
+      "destination": "RE-DMP-main/pre-training/util/ngram_utils.py",
+      "source_sha256": "c9904325adbb94aea46f1a90ea2a4f6cb740940c34b535ca6d02f89372b6e80a",
+      "packaged_sha256": "c9904325adbb94aea46f1a90ea2a4f6cb740940c34b535ca6d02f89372b6e80a",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/pre-training/util/utils.py",
+      "destination": "RE-DMP-main/pre-training/util/utils.py",
+      "source_sha256": "950425221d141eb1a07e79e6bba3e0020fbf85a246b809fdd5ae16c99dc45d0d",
+      "packaged_sha256": "950425221d141eb1a07e79e6bba3e0020fbf85a246b809fdd5ae16c99dc45d0d",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/re_eval.py",
+      "destination": "RE-DMP-main/re_eval.py",
+      "source_sha256": "8fac6792fbbc4f3679f828b780629f1054bf99a5db7adcac1d9a15ffd5e3272e",
+      "packaged_sha256": "8fac6792fbbc4f3679f828b780629f1054bf99a5db7adcac1d9a15ffd5e3272e",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/re_helper.py",
+      "destination": "RE-DMP-main/re_helper.py",
+      "source_sha256": "d709644700e507ce8eacb72309a5b3e49e85d24604d1aea8739d1342591911d0",
+      "packaged_sha256": "d709644700e507ce8eacb72309a5b3e49e85d24604d1aea8739d1342591911d0",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/re_main.py",
+      "destination": "RE-DMP-main/re_main.py",
+      "source_sha256": "4d9fb267ad3962e08294656478ad8d3a48dd543ec1e428bff93587a6f3881705",
+      "packaged_sha256": "4d9fb267ad3962e08294656478ad8d3a48dd543ec1e428bff93587a6f3881705",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/re_model.py",
+      "destination": "RE-DMP-main/re_model.py",
+      "source_sha256": "71de8637a01c6771144785b6fa784c874cd948a4cd985acac7ae5b03a3ff2f65",
+      "packaged_sha256": "71de8637a01c6771144785b6fa784c874cd948a4cd985acac7ae5b03a3ff2f65",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/README.md",
+      "destination": "RE-DMP-main/README.md",
+      "source_sha256": "e857c1b3056cd5fb9f82d2211a886dff2fd777be390c977cbb57f31222d13374",
+      "packaged_sha256": "e857c1b3056cd5fb9f82d2211a886dff2fd777be390c977cbb57f31222d13374",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/run.sh",
+      "destination": "RE-DMP-main/run.sh",
+      "source_sha256": "c75aa34dcec6f4cc364f36594f02f23e8f0fcc0469a363c96c5e8a4d675b1e35",
+      "packaged_sha256": "c75aa34dcec6f4cc364f36594f02f23e8f0fcc0469a363c96c5e8a4d675b1e35",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/score.py",
+      "destination": "RE-DMP-main/score.py",
+      "source_sha256": "d1c62411e12f166fdad8b6cef31d5c2b04d4e5b671a1d730cb40cdd9ef080f92",
+      "packaged_sha256": "d1c62411e12f166fdad8b6cef31d5c2b04d4e5b671a1d730cb40cdd9ef080f92",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/transformers_xlnet/__init__.py",
+      "destination": "RE-DMP-main/transformers_xlnet/__init__.py",
+      "source_sha256": "f4bd8d23ef1d75208d8d0d3a0f23708e5e7037663412bff9d3f78dd28e1ae477",
+      "packaged_sha256": "f4bd8d23ef1d75208d8d0d3a0f23708e5e7037663412bff9d3f78dd28e1ae477",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/transformers_xlnet/file_utils.py",
+      "destination": "RE-DMP-main/transformers_xlnet/file_utils.py",
+      "source_sha256": "5b8e7de8c6805e618e5b885ae6cb95502972dae1ef25519beaef15bee84ca213",
+      "packaged_sha256": "5b8e7de8c6805e618e5b885ae6cb95502972dae1ef25519beaef15bee84ca213",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/transformers_xlnet/modeling_utils.py",
+      "destination": "RE-DMP-main/transformers_xlnet/modeling_utils.py",
+      "source_sha256": "9cc334c0986b3899e75d671a04569bc9c1e28277e638590d231eedd0f0002d6a",
+      "packaged_sha256": "9cc334c0986b3899e75d671a04569bc9c1e28277e638590d231eedd0f0002d6a",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/transformers_xlnet/modeling_xlnet.py",
+      "destination": "RE-DMP-main/transformers_xlnet/modeling_xlnet.py",
+      "source_sha256": "c23037cc850ffa0a319027422cf5d6657cd96210c601b30bd465cbf27622d111",
+      "packaged_sha256": "c23037cc850ffa0a319027422cf5d6657cd96210c601b30bd465cbf27622d111",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/transformers_xlnet/optimization.py",
+      "destination": "RE-DMP-main/transformers_xlnet/optimization.py",
+      "source_sha256": "186ddfc05ffa4852420bdb5d520ac4c42be38210d74053da81bfe3894e9bb30e",
+      "packaged_sha256": "186ddfc05ffa4852420bdb5d520ac4c42be38210d74053da81bfe3894e9bb30e",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/transformers_xlnet/tokenization_utils.py",
+      "destination": "RE-DMP-main/transformers_xlnet/tokenization_utils.py",
+      "source_sha256": "f7e68408e61687a64fa40bfc85fa49a4066bbd0821d157e00c1a7481dfbc7a4c",
+      "packaged_sha256": "f7e68408e61687a64fa40bfc85fa49a4066bbd0821d157e00c1a7481dfbc7a4c",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/transformers_xlnet/tokenization_xlnet.py",
+      "destination": "RE-DMP-main/transformers_xlnet/tokenization_xlnet.py",
+      "source_sha256": "6f833bde8488d0567c21464870d868a040d73052727d874de5edd62ead00a731",
+      "packaged_sha256": "6f833bde8488d0567c21464870d868a040d73052727d874de5edd62ead00a731",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/util/__init__.py",
+      "destination": "RE-DMP-main/util/__init__.py",
+      "source_sha256": "88bab8a19fcd5f5eec2940122f7cfacfd9825ba979c78a86bcfac20a0c80bee3",
+      "packaged_sha256": "88bab8a19fcd5f5eec2940122f7cfacfd9825ba979c78a86bcfac20a0c80bee3",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/util/alg.py",
+      "destination": "RE-DMP-main/util/alg.py",
+      "source_sha256": "6954e937c54b78a272735cad37ee3695494ad2ff38981454d0e5562626560c41",
+      "packaged_sha256": "6954e937c54b78a272735cad37ee3695494ad2ff38981454d0e5562626560c41",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/util/fn.py",
+      "destination": "RE-DMP-main/util/fn.py",
+      "source_sha256": "f2666db4a523f4a8040038d23214665c2bd978e0957fe33dfdea4717e326a566",
+      "packaged_sha256": "f2666db4a523f4a8040038d23214665c2bd978e0957fe33dfdea4717e326a566",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/util/ngram_utils.py",
+      "destination": "RE-DMP-main/util/ngram_utils.py",
+      "source_sha256": "c9904325adbb94aea46f1a90ea2a4f6cb740940c34b535ca6d02f89372b6e80a",
+      "packaged_sha256": "c9904325adbb94aea46f1a90ea2a4f6cb740940c34b535ca6d02f89372b6e80a",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "RE-DMP-main/util/utils.py",
+      "destination": "RE-DMP-main/util/utils.py",
+      "source_sha256": "950425221d141eb1a07e79e6bba3e0020fbf85a246b809fdd5ae16c99dc45d0d",
+      "packaged_sha256": "950425221d141eb1a07e79e6bba3e0020fbf85a246b809fdd5ae16c99dc45d0d",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "saef_repro/audit.py",
+      "destination": "saef_repro/audit.py",
+      "source_sha256": "4a590ca3f2164f10f2c4289e1e1b4daa4cb7b7cc183842dcb256b1039c6cc533",
+      "packaged_sha256": "4a590ca3f2164f10f2c4289e1e1b4daa4cb7b7cc183842dcb256b1039c6cc533",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "saef_repro/checkpoint.py",
+      "destination": "saef_repro/checkpoint.py",
+      "source_sha256": "3b6b50c1d9bf5cb9b1bedbabf3e198d184a0692c83af34af0170a2c1063c941b",
+      "packaged_sha256": "3b6b50c1d9bf5cb9b1bedbabf3e198d184a0692c83af34af0170a2c1063c941b",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "saef_repro/dep_main_700k.diff",
+      "destination": "saef_repro/dep_main_700k.diff",
+      "source_sha256": "fd1a7e042876528c0dbe7e6a03936bdc0769626b457a025fb3f79a99f749f650",
+      "packaged_sha256": "fd1a7e042876528c0dbe7e6a03936bdc0769626b457a025fb3f79a99f749f650",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "saef_repro/dep_main_700k.py",
+      "destination": "saef_repro/dep_main_700k.py",
+      "source_sha256": "5033d927a655d6cb94c9f6b0ac4351fe99a04df38d8705548c78696a6af931d2",
+      "packaged_sha256": "5033d927a655d6cb94c9f6b0ac4351fe99a04df38d8705548c78696a6af931d2",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "saef_repro/dep_main_700k_repo_schedule.diff",
+      "destination": "saef_repro/dep_main_700k_repo_schedule.diff",
+      "source_sha256": "718d5a19ab255238711aea48a873e1c013e3ed1e4de16a4e66e43d9d8a85279c",
+      "packaged_sha256": "1ddd306b420a66f0ff327d5b29e3cba7bf8c489d2a8753fe654926e96d65b2cb",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "saef_repro/dep_main_700k_repo_schedule.py",
+      "destination": "saef_repro/dep_main_700k_repo_schedule.py",
+      "source_sha256": "8168936580d25c88bf0954677ce856782efb45b025b8cc4797b19ebcbda7a57f",
+      "packaged_sha256": "3f0e7f9f7e07d014906a3cfbedeb72091e273442a90fe2f154e0be489ee76a27",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "saef_repro/preflight.py",
+      "destination": "saef_repro/preflight.py",
+      "source_sha256": "34f10bff40f7960300e336b4c85e6b34a09eafc5a73e5002a02dfb06ea5da192",
+      "packaged_sha256": "34f10bff40f7960300e336b4c85e6b34a09eafc5a73e5002a02dfb06ea5da192",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "saef_repro/README.md",
+      "destination": "saef_repro/README.md",
+      "source_sha256": "2ddfee858d86b47146b6a911b2653949415f454b2e62f258b29fef6649ea6387",
+      "packaged_sha256": "65378802a647633608abd0f09cab8413c842cf2e12ab6e17daa87180be6245ed",
+      "adaptation": "distribution documentation and LF normalization; private source unchanged"
+    },
+    {
+      "source": "saef_repro/rollback.py",
+      "destination": "saef_repro/rollback.py",
+      "source_sha256": "145526f27c61c7038d475584da772b1a845c7c88f4a9626e77b7605b7f7827cd",
+      "packaged_sha256": "145526f27c61c7038d475584da772b1a845c7c88f4a9626e77b7605b7f7827cd",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "saef_repro/RUN.md",
+      "destination": "saef_repro/RUN.md",
+      "source_sha256": "e99e7a20be3e59d68f7ca98f212d00ca85663b8191f72b488703a49e0c7929dc",
+      "packaged_sha256": "0c398a963730594e9f598d47c485dba05d95a6a51b521b2d556d413872c82851",
+      "adaptation": "distribution documentation and LF normalization; private source unchanged"
+    },
+    {
+      "source": "saef_repro/run_pretrain.sh",
+      "destination": "saef_repro/run_pretrain.sh",
+      "source_sha256": "7488e4c194b3aba00a8946edb5279fe6df937fe3a63323fd041f126b3ea70723",
+      "packaged_sha256": "9e0eb991fec3cb69039418f9f1bd6f11ae2b130585253a60ca47d7ff14c64c6e",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "saef_repro/run_pretrain_subset.sh",
+      "destination": "saef_repro/run_pretrain_subset.sh",
+      "source_sha256": "57b867ea0058ea920290d0975ca407c61c8c78151cc9fb7f76add20b03da35dc",
+      "packaged_sha256": "006c009824cc6be5f3271fd72edea687c027f50eafab0add2cacc2b2b4ad132b",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "saef_repro/run_saef.sh",
+      "destination": "saef_repro/run_saef.sh",
+      "source_sha256": "e707f877f24b129e97bccca0e2d920ebf054e7ef868e91fcbf6023327eeb94c1",
+      "packaged_sha256": "e707f877f24b129e97bccca0e2d920ebf054e7ef868e91fcbf6023327eeb94c1",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "saef_repro/run_saef_isolated.sh",
+      "destination": "saef_repro/run_saef_isolated.sh",
+      "source_sha256": "2793d540e9ef51393d591ab15dbb71bb69513ab975d0ebb556ae51540a494e5a",
+      "packaged_sha256": "7c34089876ed9633eeeafb3ffcace3aadf79b1b26bba91c05faecb10535998c0",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "saef_repro/SUBSET_RUN.md",
+      "destination": "saef_repro/SUBSET_RUN.md",
+      "source_sha256": "f81f5bc8d1ab918694a073744e07e17b883e92960c483310109ba495c301ed72",
+      "packaged_sha256": "dd5829970276766ba4c0630c3ca8d240c1f1e6e6957c82fbd88250d1cc0c216a",
+      "adaptation": "distribution documentation and LF normalization; private source unchanged"
+    },
+    {
+      "source": "saef_repro/wiki_rebuild/build.py",
+      "destination": "saef_repro/wiki_rebuild/build.py",
+      "source_sha256": "617e94f31bf2eea09f048f80b5a3cdcac80997597e8e029f6844ee3dc7dcd288",
+      "packaged_sha256": "7b92027ffd26f414682f8ef4e7acc3ab030df5a1ba5ad2ef42ff2df7d61d8282",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "saef_repro/wiki_rebuild/download_dump.sh",
+      "destination": "saef_repro/wiki_rebuild/download_dump.sh",
+      "source_sha256": "c20b4175c2ec7bb33b6fc2707f400ab5f5f0048472f12c40151e4841c903f8a4",
+      "packaged_sha256": "8a63502712eef73b857a37488d683ff78eb174cdb2c208fad4444ce6d4fa9475",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "saef_repro/wiki_rebuild/README.md",
+      "destination": "saef_repro/wiki_rebuild/README.md",
+      "source_sha256": "e1c96d35adba516a6dab581c0eb934f65dc9043833c2629ba404e454661ae58f",
+      "packaged_sha256": "0ac98eea1d1fa331d3488974be1f94900676b3febe6fdd1559811420f70710f4",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "saef_repro/wiki_rebuild/stream_build.sh",
+      "destination": "saef_repro/wiki_rebuild/stream_build.sh",
+      "source_sha256": "cf21f534ca7e146785502f76ad90c5655692e13874780cb8f6b5ece68343f745",
+      "packaged_sha256": "aa05468f1e69fcf383da26171919c4713e31f6da8900d648f63c3cbd6b82892c",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "saef_repro/wiki_rebuild/stream_build_subset.sh",
+      "destination": "saef_repro/wiki_rebuild/stream_build_subset.sh",
+      "source_sha256": "4759e9671225276f2183fa23e39698bba4aaa52768f52a7f2cdc35ace8d8f0c6",
+      "packaged_sha256": "bb19bda9a40b4d93c17d25e3e5d24d57a340f18ec7fce035a5c675ba43d3e84b",
+      "adaptation": "LF normalization only"
+    },
+    {
+      "source": "case_study/export_cases.py",
+      "destination": "case_study/export_cases.py",
+      "source_sha256": "b3a6892add52e31cf137286017bf60d2958eaa9fbd51f40f10c8a36e4b859a97",
+      "packaged_sha256": "b3a6892add52e31cf137286017bf60d2958eaa9fbd51f40f10c8a36e4b859a97",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "case_study/train_and_export.py",
+      "destination": "case_study/train_and_export.py",
+      "source_sha256": "06e5f892d1468f528e0a7d55321078b69a0398123cf32b6900f69fc30ebd9eef",
+      "packaged_sha256": "06e5f892d1468f528e0a7d55321078b69a0398123cf32b6900f69fc30ebd9eef",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "case_study/run_train_cases.sh",
+      "destination": "case_study/run_train_cases.sh",
+      "source_sha256": "bbcc8ee391b80ebd1e106d640b60611c95ec2b6e8407a9dfbfa2e02e2a39ba1c",
+      "packaged_sha256": "bbcc8ee391b80ebd1e106d640b60611c95ec2b6e8407a9dfbfa2e02e2a39ba1c",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "case_study/test_export_cases.py",
+      "destination": "case_study/test_export_cases.py",
+      "source_sha256": "2b6792b4d0c0362be20b617cec9b0b6f1a8024e32bb5424a267ca26f3d02c94c",
+      "packaged_sha256": "2b6792b4d0c0362be20b617cec9b0b6f1a8024e32bb5424a267ca26f3d02c94c",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "case_study/test_train_and_export.py",
+      "destination": "case_study/test_train_and_export.py",
+      "source_sha256": "afae446c23608d129d4d35f9c532f38faa7a323b7d49a8cbc993fd4c3400647f",
+      "packaged_sha256": "9492f6c098b548622261ce09f8a6c4c4e600074d32ee39c7185918fdb3ca349a",
+      "adaptation": "synthetic test uses temporary input directories; no private model or corpus dependency"
+    },
+    {
+      "source": "case_study/manifest.example.json",
+      "destination": "case_study/manifest.example.json",
+      "source_sha256": "dbca5fcd5639919bfe94a6c8df06685d2a15e2de10f859231f08ba70d2ca2f9f",
+      "packaged_sha256": "dbca5fcd5639919bfe94a6c8df06685d2a15e2de10f859231f08ba70d2ca2f9f",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "case_study/run.config.example.json",
+      "destination": "case_study/run.config.example.json",
+      "source_sha256": "926045ccf9d04f48fb795e77ffb4e921471f6772e59a1b57b7b98b776c31dc99",
+      "packaged_sha256": "926045ccf9d04f48fb795e77ffb4e921471f6772e59a1b57b7b98b776c31dc99",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "data/database/EventStoryLine_bert_intra_and_inter_train_features.pkl",
+      "destination": "data/database/EventStoryLine_bert_intra_and_inter_train_features.pkl",
+      "source_sha256": "792bd3f26b3565cfea427df3c1a3ad83c8a1a2ec0dba1feab101b5a9cee5e08f",
+      "packaged_sha256": "792bd3f26b3565cfea427df3c1a3ad83c8a1a2ec0dba1feab101b5a9cee5e08f",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "data/database/EventStoryLine_bert_intra_and_inter_dev_features.pkl",
+      "destination": "data/database/EventStoryLine_bert_intra_and_inter_dev_features.pkl",
+      "source_sha256": "0c1392087b00d9bdda0d8fc3c04ac8856eb5af8ef71d94431f7a98f2b7621d4c",
+      "packaged_sha256": "0c1392087b00d9bdda0d8fc3c04ac8856eb5af8ef71d94431f7a98f2b7621d4c",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "logout/seed_209/t_lr2e-05lr0.00012026-10-09 11_05_36.txt",
+      "destination": "results/reference_run/training.txt",
+      "source_sha256": "09812dc252fc81887263fe6bba3b9fdc96447074ab1a5fdb3f3579f02135e60e",
+      "packaged_sha256": "09812dc252fc81887263fe6bba3b9fdc96447074ab1a5fdb3f3579f02135e60e",
+      "adaptation": "byte-identical"
+    }
+  ]
+}

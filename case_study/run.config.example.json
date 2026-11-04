@@ -1,0 +1,20 @@
+{
+  "model_name": "../bert-base-uncased",
+  "mlp_size": 2304,
+  "mlp_drop": 0.4,
+  "n_last": 768,
+  "rate": 0.0,
+  "w": 0.6,
+  "max_iteration": 9,
+  "min_iteration": 2,
+  "threshold": 2,
+  "in_channels": {"event": 768},
+  "metadata": [["event"], [["event", "intra", "event"], ["event", "inter", "event"]]],
+  "num_heads": 4,
+  "beta_intra": 0.7,
+  "beta_inter": 0.3,
+  "gamma": 2.0,
+  "no_of_classes": 3,
+  "loss_type": "focal",
+  "seed": 209
+}
